@@ -1,0 +1,31 @@
+.cart {
+  margin-bottom: 60px;
+    .breadcrumb {
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .empty-cart {
+      text-align: center;
+      margin-top: 50px;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+  
+      .return-link {
+        font-size: 16px;
+        text-decoration: underline;
+        color: #000;
+        &:hover {
+          color: #f0ad4e;
+        }
+      }
+    }
+  }
+  

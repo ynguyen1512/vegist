@@ -1,0 +1,171 @@
+.shop {
+    .breadcrumbs {
+      padding: 10px 50px;
+      background-color: #f9f9f9;
+      a {
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        color: #777;
+      }
+    }
+  
+    .shop-container {
+      display: flex;
+      padding: 20px 50px;
+  
+      .shop-sidebar {
+        width: 20%;
+        h3 {
+          font-size: 18px;
+          color: #333;
+          margin-bottom: 20px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin-bottom: 10px;
+            input {
+              margin-right: 10px;
+            }
+            label {
+              font-size: 16px;
+              color: #777;
+              cursor: pointer;
+            }
+          }
+        }
+        .filter {
+          .filter-section {
+            margin-bottom: 20px;
+            h4 {
+              font-size: 16px;
+              color: #333;
+              margin-bottom: 10px;
+            }
+            .price-filter {
+              display: flex;
+              flex-direction: column;
+              input[type="range"] {
+                margin-bottom: 10px;
+              }
+              .price-inputs {
+                display: flex;
+                align-items: center;
+                input {
+                  width: 50%;
+                  padding: 5px;
+                  margin-right: 5px;
+                }
+                span {
+                  margin: 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .shop-content {
+        width: 80%;
+        padding-left: 20px;
+  
+        .shop-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          h2 {
+            font-size: 24px;
+            color: #333;
+          }
+          .shop-header-controls {
+            display: flex;
+            align-items: center;
+            .view-toggle {
+              button {
+                background: none;
+                border: none;
+                font-size: 18px;
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover {
+                  color: #f5a623;
+                }
+              }
+            }
+            .sort-by {
+              display: flex;
+              align-items: center;
+              label {
+                margin-right: 10px;
+                font-size: 16px;
+                color: #777;
+              }
+              select {
+                padding: 5px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+  
+        .shop-banner {
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+  
+        .product-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          .product-card {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            img {
+              width: 200px;
+              border-radius: 10px;
+              margin-bottom: 10px;
+            }
+            h4 {
+              font-size: 18px;
+              color: #333;
+              margin-bottom: 10px;
+            }
+            .price {
+              font-size: 16px;
+              color: #333;
+              .original-price {
+                text-decoration: line-through;
+                color: #999;
+                margin-left: 10px;
+              }
+            }
+            button {
+              padding: 10px 20px;
+              background-color: #f5a623;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              &:hover {
+                background-color: #e6951c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

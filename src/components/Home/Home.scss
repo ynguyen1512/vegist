@@ -1,0 +1,336 @@
+.home {
+  .banner {
+    display: flex !important; // Make sure to use !important for flexbox with react-slick
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5; // Adjust based on the actual background color
+
+    .banner-content {
+      max-width: 50%;
+      
+      .banner-subtitle {
+        font-size: 16px;
+        color: #b08968; // Adjust based on the actual subtitle color
+        margin-bottom: 10px;
+      }
+
+      .banner-title {
+        font-size: 48px;
+        color: #333; // Adjust based on the actual title color
+        margin-bottom: 20px;
+      }
+
+      .banner-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f5a623; // Adjust based on the actual button color
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #e6951c; // Adjust based on the actual hover color
+        }
+      }
+    }
+
+    .banner-image {
+      max-width: 50%;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .categories-slider {
+    .category {
+      text-align: center;
+      padding: 20px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  }
+
+  .promotions {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+
+    .promotion {
+      position: relative;
+      width: 30%;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .promo-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+
+        .promo-subtitle {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .promo-title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        .promo-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #f5a623;
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: #e6951c;
+          }
+        }
+
+        .promo-badge {
+          display: inline-block;
+          margin-top: 10px;
+          background-color: #f5a623;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .trending-products {
+    padding: 50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .product {
+      text-align: center;
+
+      .product-image {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+
+        .discount-badge {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: #ff4d4f;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        margin: 15px 0;
+        color: #333;
+      }
+
+      .price {
+        font-size: 16px;
+        color: #333;
+
+        .original-price {
+          text-decoration: line-through;
+          color: #999;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    background-color: #f5a623;
+    color: #fff;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #e6951c;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+
+    .service {
+      text-align: center;
+      padding: 20px;
+      border: 1px dashed #ccc;
+      border-radius: 10px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #777;
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .testimonial {
+      text-align: center;
+      padding: 20px;
+
+      .testimonial-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .testimonial-quote {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: #f5a623;
+        }
+
+        .testimonial-text {
+          font-size: 16px;
+          color: #333;
+          margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        .testimonial-rating {
+          font-size: 18px;
+          color: #f5a623;
+        }
+      }
+    }
+  }
+
+  .recent-news {
+    padding: 50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .news-slider {
+      .news-item {
+        padding: 0 10px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #777;
+          margin-bottom: 20px;
+        }
+
+        .news-link {
+          font-size: 16px;
+          color: #f5a623;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .view-all-news {
+      display: block;
+      text-align: center;
+      width: fit-content;
+      margin: 50px auto;
+      padding: 10px 20px;
+      background-color: #f5a623;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #e6951c;
+      }
+    }
+  }
+}
