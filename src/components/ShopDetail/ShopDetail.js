@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import './ShopDetail.scss';
-import productImage1 from '../../assets/images/product1.jpg';
-import productImage2 from '../../assets/images/product2.jpg';
-import productImage3 from '../../assets/images/product3.jpg';
-import productImage4 from '../../assets/images/product4.jpg';
-import relatedProductImage1 from '../../assets/images/product5.jpg';
-import relatedProductImage2 from '../../assets/images/product6.jpg';
-import relatedProductImage3 from '../../assets/images/product7.jpg';
-import relatedProductImage4 from '../../assets/images/product8.jpg';
 
 
 const imageMap = {
-    '5KG': productImage1,
-    '10KG': productImage2,
-    '1KG': productImage3
+    '5KG': 'assets/images/product1.jpg',
+    '10KG': 'assets/images/product2.jpg',
+    '1KG': 'assets/images/product3.jpg'
 };
 
 const ShopDetail = () => {
@@ -35,10 +27,10 @@ const ShopDetail = () => {
     };
 
     const relatedProducts = [
-        { image: relatedProductImage1, name: 'Sp. red fresh guava', price: '€30,00', originalPrice: '€44,00', discount: '32%' },
-        { image: relatedProductImage2, name: 'Fresh mussel (500g)', price: '€33,00', originalPrice: '€55,00', discount: '40%' },
-        { image: relatedProductImage3, name: 'Fresh banana 100% safe', price: '€15,00', originalPrice: '€20,00', discount: '25%' },
-        { image: relatedProductImage4, name: 'Fruits banana 100% organic', price: '€22,00', originalPrice: '€44,00', discount: '50%' }
+        { image: 'assets/images/product5.jpg', name: 'Sp. red fresh guava', price: '€30,00', originalPrice: '€44,00', discount: '32%' },
+        { image: 'assets/images/product6.jpg', name: 'Fresh mussel (500g)', price: '€33,00', originalPrice: '€55,00', discount: '40%' },
+        { image: 'assets/images/product7.jpg', name: 'Fresh banana 100% safe', price: '€15,00', originalPrice: '€20,00', discount: '25%' },
+        { image: 'assets/images/product8.jpg', name: 'Fruits banana 100% organic', price: '€22,00', originalPrice: '€44,00', discount: '50%' }
     ];
 
     return (
@@ -48,10 +40,10 @@ const ShopDetail = () => {
                 <div className="product-images">
                     <img src={mainImage} alt="Product" className="main-image" />
                     <div className="thumbnail-images">
-                        <img src={productImage1} alt="Product Thumbnail" className='thumbnail-img'/>
-                        <img src={productImage2} alt="Product Thumbnail" className='thumbnail-img'/>
-                        <img src={productImage3} alt="Product Thumbnail" className='thumbnail-img'/>
-                        <img src={productImage4} alt="Product Thumbnail" className='thumbnail-img'/>
+                        <img src='assets/images/product1.jpg' alt="Product Thumbnail" className='thumbnail-img'/>
+                        <img src='assets/images/product2.jpg' alt="Product Thumbnail" className='thumbnail-img'/>
+                        <img src='assets/images/product3.jpg' alt="Product Thumbnail" className='thumbnail-img'/>
+                        <img src='assets/images/product4.jpg' alt="Product Thumbnail" className='thumbnail-img'/>
                     </div>
                 </div>
                 <div className="product-info">
@@ -81,9 +73,9 @@ const ShopDetail = () => {
                     <div className="sku">SKU: 123456</div>
                     <div className="share">
                         <span>Share: </span>
-                        <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
-                        <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
-                        <a href="#"><img src="icon-pinterest.png" alt="Pinterest" /></a>
+                        <a href="/"><img src="icon-facebook.png" alt="Facebook" /></a>
+                        <a href="/"><img src="icon-twitter.png" alt="Twitter" /></a>
+                        <a href="/"><img src="icon-pinterest.png" alt="Pinterest" /></a>
                     </div>
                     {/* <div className="payment-options">
                         <img src="icon-visa.png" alt="Visa" />

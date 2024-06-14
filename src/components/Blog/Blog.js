@@ -1,20 +1,13 @@
 import React from 'react';
 import './Blog.scss';
-import post1 from '../../assets/images/blog1.jpg';
-import post2 from '../../assets/images/blog2.jpg';
-import post3 from '../../assets/images/blog3.jpg';
-import news1 from '../../assets/images/news1.jpg';
-import news2 from '../../assets/images/news2.jpg';
-import news3 from '../../assets/images/news3.jpg';
-import news4 from '../../assets/images/news4.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faSearch } from '@fortawesome/fontawesome-free-solid';
 
 const Blog = () => {
   const recentPosts = [
-    { image: post1, date: 'May 13, 2023', title: 'All time fresh every time healthy...' },
-    { image: post2, date: 'May 13, 2023', title: 'Vegina special liquide fesh vagi' },
-    { image: post3, date: 'May 13, 2023', title: 'Green onion knife and salad...' },
+    { image: 'assets/images/blog1.jpg', date: 'May 13, 2023', title: 'All time fresh every time healthy...' },
+    { image: 'assets/images/blog2.jpg', date: 'May 13, 2023', title: 'Vegina special liquide fesh vagi' },
+    { image: 'assets/images/blog3.jpg', date: 'May 13, 2023', title: 'Green onion knife and salad...' },
   ];
 
   const categories = [
@@ -30,10 +23,10 @@ const Blog = () => {
   ];
 
   const news = [
-    { image: news1, title: 'All time fresh every time healthy', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
-    { image: news2, title: 'Vegina special liquide fesh vagi', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
-    { image: news3, title: 'Green onion knife and salad...', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
-    { image: news4, title: 'Healthy food for healthy life', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
+    { image: 'assets/images/news1.jpg', title: 'All time fresh every time healthy', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
+    { image: 'assets/images/news2.jpg', title: 'Vegina special liquide fesh vagi', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
+    { image: 'assets/images/news3.jpg', title: 'Green onion knife and salad...', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
+    { image: 'assets/images/news4.jpg', title: 'Healthy food for healthy life', date: 'May 13, 2023', excerpt: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ...' },
   ];
 
   return (
@@ -85,7 +78,7 @@ const Blog = () => {
               <div className="news-info">
                 <h3>{item.title}</h3>
                 <p>{item.excerpt}</p>
-                <a href="#">Read More <FontAwesomeIcon icon={faArrowRight}/></a>
+                <a href="/">Read More <FontAwesomeIcon icon={faArrowRight}/></a>
               </div>
             </div>
           ))}

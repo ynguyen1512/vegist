@@ -1,26 +1,16 @@
-import React, { useState } from 'react';
 import './Collection.scss';
-import collection1 from '../../assets/images/collection1.jpg';
-import collection2 from '../../assets/images/collection2.jpg';
-import collection4 from '../../assets/images/collection4.jpg';
-import collection5 from '../../assets/images/collection5.jpg';
-import collection6 from '../../assets/images/collection6.jpg';
-import collection7 from '../../assets/images/collection7.jpg';
-import collection8 from '../../assets/images/collection8.jpg';
-import collection9 from '../../assets/images/collection9.jpg';
-import collection10 from '../../assets/images/collection10.jpg';
 
 const Collection = () => {
     const items = [
-        { quantity: 8, image: collection1, name: 'Bagel' },
-        { quantity: 22, image: collection2, name: 'Shrimp' },
-        { quantity: 8, image: collection10, name: 'Biscuit' },
-        { quantity: 8, image: collection4, name: 'Bread' },
-        { quantity: 16, image: collection5, name: 'Breakfast' },
-        { quantity: 8, image: collection6, name: 'Cake' },
-        { quantity: 8, image: collection7, name: 'Cookie' },
-        { quantity: 8, image: collection8, name: 'Cupcake' },
-        { quantity: 8, image: collection9, name: 'Cupcake' },
+        { quantity: 8, image: 'assets/images/collection1.jpg', name: 'Bagel' },
+        { quantity: 22, image: 'assets/images/collection2.jpg', name: 'Shrimp' },
+        { quantity: 8, image: 'assets/images/collection10.jpg', name: 'Biscuit' },
+        { quantity: 8, image: 'assets/images/collection4.jpg', name: 'Bread' },
+        { quantity: 16, image: 'assets/images/collection5.jpg', name: 'Breakfast' },
+        { quantity: 8, image: 'assets/images/collection6.jpg', name: 'Cake' },
+        { quantity: 8, image: 'assets/images/collection7.jpg', name: 'Cookie' },
+        { quantity: 8, image: 'assets/images/collection8.jpg', name: 'Cupcake' },
+        { quantity: 8, image: 'assets/images/collection9.jpg', name: 'Cupcake' },
     ];
 
     return (

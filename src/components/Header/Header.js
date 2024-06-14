@@ -1,15 +1,9 @@
 import React from 'react';
 import './Header.scss';
-import logo from '../../assets/images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faShoppingCart, faUser } from '@fortawesome/fontawesome-free-solid';
-import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
-  const navigate = useNavigate()
-  const handleNavigate = () => {
-    navigate('/cart')
-  }
   return (
     <header className="header">
       <div className="header-top">
@@ -22,7 +16,7 @@ const Header = () => {
       </div>
       <div className="header-main">
         <div className="header-logo">
-          <img src={logo} alt="Vegist Logo" />
+          <img src='assets/images/logo.png' alt="Vegist Logo" />
         </div>
         <nav className="header-nav">
           <ul>

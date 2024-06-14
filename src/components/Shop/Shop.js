@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 import './Shop.scss';
-import banner from '../../assets/images/banner-shop.jpg';
-import product1 from '../../assets/images/product1.jpg';
-import product2 from '../../assets/images/product2.jpg';
-import product3 from '../../assets/images/product3.jpg';
-import product4 from '../../assets/images/product4.jpg';
-import product5 from '../../assets/images/product5.jpg';
-import product6 from '../../assets/images/product6.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Shop = () => {
@@ -124,37 +117,37 @@ const Shop = () => {
           </div>
 
           <div className="shop-banner">
-            <img src={banner} alt="Banner" />
+            <img src='assets/images/banner-shop.jpg' alt="Banner" />
           </div>
 
           <div className="product-grid">
             <div className="product-card" onClick={handleNavigate}>
-              <img src={product1} alt="Product 1" />
+              <img src='assets/images/product1.jpg' alt="Product 1" />
               <h4>Vegetable tomato</h4>
               <p className="price">€55,00</p>
             </div>
             <div className="product-card">
-              <img src={product2} alt="Product 2" />
+              <img src='assets/images/product2.jpg' alt="Product 2" />
               <h4>Sp. red fresh guava</h4>
               <p className="price">€30,00 <span className="original-price">€44,00</span></p>
             </div>
             <div className="product-card">
-              <img src={product3} alt="Product 3" />
+              <img src='assets/images/product3.jpg' alt="Product 3" />
               <h4>Shrimp - jumbo (5 lb)</h4>
               <p className="price">€61,00</p>
             </div>
             <div className="product-card">
-              <img src={product4} alt="Product 4" />
+              <img src='assets/images/product4.jpg' alt="Product 4" />
               <h4>Organic coconut</h4>
               <p className="price">€35,00 <span className="original-price">€44,00</span></p>
             </div>
             <div className="product-card">
-              <img src={product5} alt="Product 5" />
+              <img src='assets/images/product5.jpg' alt="Product 5" />
               <h4>Orange juice natural</h4>
               <p className="price">€40,00</p>
             </div>
             <div className="product-card">
-              <img src={product6} alt="Product 6" />
+              <img src='assets/images/product6.jpg' alt="Product 6" />
               <h4>Healthy papaya 100%</h4>
               <p className="price">€50,00</p>
             </div>
